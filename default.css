@@ -1,11 +1,31 @@
-img.center {
-	height: 100%
-	width: 100%;
+#focus {
+	margin: 0;
+	padding: 0;
+	border: 1px solid black;
+	height: 100vh;
 }
 
-div.center {
+#heading {
+	text-align:  right;
+}
+
+#center  {
 	display: block;
-	border: 1px solid black;
-	margin-left: 50%;
-	margin-top: 50%;
+	position:  relative;
+	width:  272px;
+
+	left:  80vh;
+	top:  17vh;
+}
+
+#query {
+	position:  relative;
+	width:  500px;
+	height: 27px;
+	left:  -12vh;
+	transform:  translateY(2vh);
+}
+
+#lucky #search {
+	transform:  translateY(5vh);
 }
