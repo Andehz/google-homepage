@@ -3,29 +3,38 @@
 	padding: 0;
 	border: 1px solid black;
 	height: 100vh;
+	display: flex;
+	justify-content: center;
 }
 
 #heading {
-	text-align:  right;
+	position: absolute;
+	height: 20px;
+	border: 1px solid black;
+	right: 0;
 }
 
-#center  {
-	display: block;
-	position:  relative;
-	width:  272px;
-
-	left:  80vh;
-	top:  17vh;
+#center {
+	border: 1px solid black;
+	align-self: center;
 }
 
 #query {
-	position:  relative;
-	width:  500px;
+	width: 500px;
 	height: 27px;
-	left:  -12vh;
-	transform:  translateY(2vh);
-}
 
-#lucky #search {
-	transform:  translateY(5vh);
+	transform: translateX(-55vh);
+	transform: translateY(2vh);
+	display: block;
+	margin: auto;
+}
+div #logo {
+	display: block;
+	border: 1px solid black;
+	margin: auto;
+}
+div #lucky, div #search {
+	border: 1px solid black;
+
+	transform: translateY(10vh);
 }
