@@ -1,4 +1,4 @@
-#focus {
+#canvas {
 	margin: 0;
 	padding: 0;
 	border: 1px solid black;
@@ -35,6 +35,6 @@ div #logo {
 }
 div #lucky, div #search {
 	border: 1px solid black;
-
+	margin: auto;
 	transform: translateY(10vh);
 }
