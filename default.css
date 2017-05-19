@@ -14,9 +14,11 @@
 	right: 0;
 }
 
-#center {
+.center, #query, #logo, #lucky, #search {
 	border: 1px solid black;
 	align-self: center;
+	display: block;
+	margin: auto;
 }
 
 #query {
@@ -25,16 +27,9 @@
 
 	transform: translateX(-55vh);
 	transform: translateY(2vh);
-	display: block;
-	margin: auto;
 }
-div #logo {
-	display: block;
-	border: 1px solid black;
-	margin: auto;
-}
-div #lucky, div #search {
-	border: 1px solid black;
-	margin: auto;
+
+#lucky, #search {
+	display: inline;
 	transform: translateY(10vh);
 }
