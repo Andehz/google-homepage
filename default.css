@@ -9,6 +9,7 @@
 	height: 100vh;
 	display: flex;
 	justify-content: center;
+
 }
 
 #heading {
@@ -35,7 +36,7 @@
 .center {
 	transform: translateY(-20vh);
 	align-self: center;
-	align-items: center;
+
 }
 
 .center, #query, #logo, #lucky, #search {
@@ -51,12 +52,19 @@
 	transform: translateY(2vh);
 }
 
-#buttons {
+#buttonCanvas {
 	border: 1px solid black;
-	transform: translateY(6vh);
-	display: inline-flex;
-	align-self: center;
-	font-size: 11px;
+	transform: translateY(5vh);
+
 	font-weight: bold;
 	color: rgba(112, 111, 111, 0.96);
+	right: 0;
+	text-align: center;
+
 }
+
+#lucky, #search {
+	display: inline;
+	font-size: 11px;
+}
+
