@@ -13,33 +13,45 @@
 
 #heading {
 	position: absolute;
-	height: 16px;
 	right: 0;
-	transform: translate(-10px, 15px);
+	transform: translate(-25px, 18px);
 
 	word-spacing: 10px;
-
 }
 
-heading * {
-	display: inline;
+#heading * {
+	font-size: 12px;
 }
 
-#heading *:link {
+#sign-in {
+	padding: 12px 0px;
+	border-radius: 100%;
+	background-color: red;
+	color: transparent;
+}
+
+#notification {
+	position: relative;
+	top: 6px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+a:link {
 	color: black;
 	text-decoration: none;
 }
 
-#heading *:hover {
+a:hover {
 	text-decoration: underline;
 }
 
-#heading *:visited {
+a:visited {
 	color: black;
 }
 
 .center {
-	transform: translateY(-20vh);
+	transform: translateY(-15vh);
 	align-self: center;
 
 }
@@ -50,16 +62,20 @@ heading * {
 }
 
 #query {
-	width: 550px;
-	height: 35px;
+	width: 570px;
+	height: 38px;
 	border: 0;
-	box-shadow: -2px 2px 5px gray;
+	box-shadow: -2px 2px 5px #b5b6b7;
 
-	transform: translateY(2vh);
+	transform: translateY(3vh);
+}
+
+#query:hover {
+	box-shadow: -2px 2px 10px #b5b6b7;
 }
 
 #buttonCanvas {
-	transform: translateY(5vh);
+	transform: translateY(7vh);
 
 	right: 0;
 	text-align: center;
@@ -68,32 +84,52 @@ heading * {
 
 #search, #lucky {
 	display: inline;
-	padding: 15px;
+	padding: 11px 25px;
 	border: 0;
 
 	font-weight: bold;
 	font-size: 12px;
 	color: rgba(112, 111, 111, 0.96);
+
+	background: #edeff2;
 }
 
-#search:hover {
+#buttonCanvas input:hover {
 	border: 1px solid gray;
-
 	color: black;
 }
 
-#lucky:hover {
-	border: 1px solid gray;
 
-	color: black;
-}
 
 #footer {
 	width: 100%;
-	height: 5vh;
+	height: 4.2vh;
 
-	background-color: rgb(219, 220, 221);
-	display: inline;
+	background-color: rgb(237, 237, 237);
+
 	position: absolute;
+	display: flex;
 	align-self: flex-end;
+	align-items: center;
+}
+
+#footer * {
+	display: inline;
+	word-spacing: 20px;
+
+	font-size: 12px;
+	transform: translateY(2px);
+	color: gray;
+
+}
+
+#rightSide {
+	position: absolute;
+	right: 0;
+	margin-right: 30px;
+
+}
+
+#leftSide {
+	margin-left: 30px;
 }
