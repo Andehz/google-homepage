@@ -5,7 +5,6 @@
 #canvas {
 	margin: 0;
 	padding: 0;
-	border: 1px solid black;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -14,10 +13,16 @@
 
 #heading {
 	position: absolute;
-	height: 20px;
-	border: 1px solid black;
+	height: 16px;
 	right: 0;
+	transform: translate(-10px, 15px);
 
+	word-spacing: 10px;
+
+}
+
+heading * {
+	display: inline;
 }
 
 #heading *:link {
@@ -40,31 +45,55 @@
 }
 
 .center, #query, #logo, #lucky, #search {
-	border: 1px solid black;
 	display: block;
 	margin: auto;
 }
 
 #query {
-	width: 500px;
-	height: 27px;
+	width: 550px;
+	height: 35px;
+	border: 0;
+	box-shadow: -2px 2px 5px gray;
 
 	transform: translateY(2vh);
 }
 
 #buttonCanvas {
-	border: 1px solid black;
 	transform: translateY(5vh);
 
-	font-weight: bold;
-	color: rgba(112, 111, 111, 0.96);
 	right: 0;
 	text-align: center;
 
 }
 
-#lucky, #search {
+#search, #lucky {
 	display: inline;
-	font-size: 11px;
+	padding: 15px;
+	border: 0;
+
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(112, 111, 111, 0.96);
 }
 
+#search:hover {
+	border: 1px solid gray;
+
+	color: black;
+}
+
+#lucky:hover {
+	border: 1px solid gray;
+
+	color: black;
+}
+
+#footer {
+	width: 100%;
+	height: 5vh;
+
+	background-color: rgb(219, 220, 221);
+	display: inline;
+	position: absolute;
+	align-self: flex-end;
+}
